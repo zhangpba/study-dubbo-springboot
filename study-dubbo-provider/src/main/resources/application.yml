@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+
+dubbo:
+  application:
+    name: prvider #当前服务名称
+#  scan:
+#    base-packages: com.study.service.impl #开启包扫描，可以替代@EnbleDubbo注解
+
+  monitor:
+    protocol: registry #连接监控中心
+
+  protocol:
+    name: dubbo #通信协议
+    port: 20880 #接口
+
+  registry:
+    address: 127.0.0.1:2181 #注册中心的地址
+    protocol: zookeeper     #注册中心的协议

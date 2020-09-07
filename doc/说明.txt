@@ -1,0 +1,31 @@
+
+工程是来自：https://segmentfault.com/a/1190000020622830?utm_source=tag-newest
+（可以扩招学习这个demo：https://blog.csdn.net/weixin_35196633/article/details/87368551）
+
+准备环境
+	win10
+	jdk：jdk1.8.0_121
+	tomcat：apache-tomcat-8.5.23
+	zookeeper：zookeeper-3.4.14
+	idea-2017版
+	框架：springboot-2.1.8.RELEASE
+
+一 dubbo-admin安装使用 部署运行
+https://blog.csdn.net/a704397849/article/details/91904842
+
+步骤：
+	将dubbo-admin-2.5.10.war 复制到 tomcat下 webapps 目录里面
+	启动成功后，浏览器 输入 http://127.0.0.1:8080/dubbo-admin-2.5.10 , 在弹出的登录框输入 root/root 登录
+
+
+二 windows下面双击bin目录下的 zkServer.cmd
+
+三 书写代码：springboot+dubbo
+https://segmentfault.com/a/1190000020622830?utm_source=
+	代码中引入的zookeeper依赖需要跟zookeeper版本保持一致
+
+四 浏览器中输入：
+		http://127.0.0.1:8082/getUserList?name=admin
+问题：
+zookeeper下载后启动闪退处理：
+https://blog.csdn.net/qq279862451/article/details/79083522
